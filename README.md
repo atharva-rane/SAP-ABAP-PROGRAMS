@@ -1,75 +1,119 @@
 ````markdown
-# 🚀 ABAP Program Codes
+<div align="center">
 
-> A collection of my daily SAP ABAP practice programs, covering concepts from basic to advanced. This repository documents my learning journey, coding practice, and interview preparation.
+# 🚀 SAP ABAP Program Codes
+
+### *A curated collection of my SAP ABAP learning journey, daily coding practice, and interview preparation.*
+
+<img src="https://img.shields.io/badge/SAP-ABAP-blue?style=for-the-badge&logo=sap" />
+<img src="https://img.shields.io/badge/Status-Learning-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Daily-Practice-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge" />
 
 ---
 
-## 📖 About
+*"Small progress every day leads to big results."* 🚀
 
-Welcome to my **ABAP Program Codes** repository!
+</div>
 
-This repository contains the ABAP programs I write while learning SAP ABAP. Every program is created to strengthen my understanding of core concepts through hands-on practice.
+---
 
-### 🎯 Objectives
+# 📖 About
 
-- 📅 Practice ABAP every day
-- 📚 Learn concepts through coding
+Welcome to my **SAP ABAP Program Codes** repository!
+
+This repository showcases my journey of learning **SAP ABAP** through consistent hands-on practice. Every program is written to strengthen my understanding of ABAP concepts, improve coding standards, and prepare for real-world SAP development.
+
+Whether you're a beginner, an interviewer, or a fellow SAP enthusiast, I hope this repository serves as a useful reference.
+
+---
+
+# 🎯 Objectives
+
+- 📅 Practice SAP ABAP consistently
+- 📚 Learn by writing real ABAP programs
+- 💡 Build strong programming fundamentals
 - 💼 Prepare for SAP ABAP interviews
-- 📝 Maintain clean and reusable code
-- 🚀 Track my learning progress
+- 🚀 Maintain a professional coding portfolio
+- 📈 Track my learning progress
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
 ```text
-ABAP Program Codes/
+📦 ABAP Program Codes
 │
 ├── 📁 01. SAP BASICS
 │
 ├── 📁 02. Internal Tables - Operations
 │
-└── 🚧 More Coming Soon...
+└── 🚧 More Topics Coming Soon...
 ```
 
 ---
 
-## 💡 Why This Repository?
+# 🌟 Why This Repository?
 
-This repository serves as:
+This repository is more than just a collection of programs.
 
-- 📖 My ABAP learning journal
-- 📝 Code reference
-- 🚀 Portfolio to showcase my ABAP journey
+It serves as my:
 
----
+- 📖 Learning Journal
+- 💻 Daily Coding Practice
+- 📚 Revision Notes
+- 💼 Interview Preparation Resource
+- 🚀 Professional Portfolio
 
-## 🎯 Goal
-
-To become a skilled **SAP ABAP Developer** by consistently practicing coding, understanding concepts deeply, and building real-world projects.
-
----
-
-## ⭐ Support
-
-If you find this repository helpful, please consider giving it a **Star ⭐**.
-
-It motivates me to continue learning and sharing my progress.
+Every folder represents another milestone in my SAP ABAP journey.
 
 ---
 
-## 👨‍💻 Author
+# 🛠️ Coding Principles
 
-### Atharva Rane
+✔ Clean & Readable Code
+
+✔ Proper Naming Conventions
+
+✔ Well-Structured Programs
+
+✔ Interview-Oriented Examples
+
+✔ Consistent Daily Practice
+
+---
+
+# 🎯 Goal
+
+> **To become a skilled SAP ABAP Developer by mastering the fundamentals, building real-world solutions, and continuously improving through daily coding practice.**
+
+---
+
+# ⭐ Support
+
+If you find this repository useful or inspiring,
+
+**please consider giving it a ⭐ Star.**
+
+Your support motivates me to keep learning and sharing my journey with the community.
+
+---
+
+# 👨‍💻 Author
+
+## Atharva Rane
 
 **Aspiring SAP ABAP Developer**
 
-📚 Learning SAP ABAP one program at a time.
-
-> *"Consistency is the key to mastery. Every program written today builds a stronger developer for tomorrow."*
+📚 Passionate about SAP Development • Continuous Learning • Problem Solving
 
 ---
 
-## 🚀 Happy Coding!
+<div align="center">
+
+### 🚀 *"Consistency is the key to mastery. Every line of code written today shapes the developer I'll become tomorrow."*
+
+**Thank you for visiting! Happy Coding! 💙**
+
+</div>
 ````
