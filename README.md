@@ -1,101 +1,145 @@
-````markdown
-<div align="center">
+# 🚀 ABAP Program Codes
 
-# 🚀 SAP ABAP Program Codes
-
-### *A curated collection of my SAP ABAP learning journey, daily coding practice, and interview preparation.*
-
-<img src="https://img.shields.io/badge/SAP-ABAP-blue?style=for-the-badge&logo=sap" />
-<img src="https://img.shields.io/badge/Status-Learning-success?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Daily-Practice-orange?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge" />
+> A collection of my daily SAP ABAP practice programs, covering concepts from basic to advanced. This repository documents my learning journey, coding practice, and interview preparation.
 
 ---
 
-*"Small progress every day leads to big results."* 🚀
+## 📖 About
 
-</div>
+Welcome to my **ABAP Program Codes** repository!
 
----
+This repository contains the ABAP programs I write while learning SAP ABAP. Every program is created to strengthen my understanding of core concepts through hands-on practice.
 
-# 📖 About
+### 🎯 Objectives
 
-Welcome to my **SAP ABAP Program Codes** repository!
-
-This repository showcases my journey of learning **SAP ABAP** through consistent hands-on practice. Every program is written to strengthen my understanding of ABAP concepts, improve coding standards, and prepare for real-world SAP development.
-
-Whether you're a beginner, an interviewer, or a fellow SAP enthusiast, I hope this repository serves as a useful reference.
-
----
-
-# 🎯 Objectives
-
-- 📅 Practice SAP ABAP consistently
-- 📚 Learn by writing real ABAP programs
-- 💡 Build strong programming fundamentals
+- 📅 Practice ABAP every day
+- 📚 Learn concepts through coding
 - 💼 Prepare for SAP ABAP interviews
-- 🚀 Maintain a professional coding portfolio
-- 📈 Track my learning progress
+- 📝 Maintain clean and reusable code
+- 🚀 Track my learning progress
 
 ---
 
 # 📂 Repository Structure
 
 ```text
-📦 ABAP Program Codes
+ABAP Program Codes/
 │
 ├── 📁 01. SAP BASICS
 │
 ├── 📁 02. Internal Tables - Operations
 │
-└── 🚧 More Topics Coming Soon...
+├── 📁 03. Open SQL
+│
+├── 📁 04. Modularization
+│
+├── 📁 05. Reports
+│
+├── 📁 06. Data Dictionary
+│
+├── 📁 07. ALV Reports
+│
+├── 📁 08. Object-Oriented ABAP
+│
+├── 📁 09. Smart Forms
+│
+├── 📁 10. Enhancements
+│
+└── 🚧 More Coming Soon...
 ```
 
 ---
 
-# 🌟 Why This Repository?
+# 📚 Topics Covered
 
-This repository is more than just a collection of programs.
+## ✅ SAP Basics
 
-It serves as my:
-
-- 📖 Learning Journal
-- 💻 Daily Coding Practice
-- 📚 Revision Notes
-- 💼 Interview Preparation Resource
-- 🚀 Professional Portfolio
-
-Every folder represents another milestone in my SAP ABAP journey.
+- Variables
+- Constants
+- Data Types
+- Operators
+- Input & Output
+- Conditional Statements
+- Loops
+- String Operations
+- System Variables
+- Basic Syntax
 
 ---
 
-# 🛠️ Coding Principles
+## ✅ Internal Tables – Operations
 
-✔ Clean & Readable Code
+- Standard Tables
+- Sorted Tables
+- Hashed Tables
+- Work Areas
+- Header Lines
+- APPEND
+- INSERT
+- MODIFY
+- DELETE
+- READ TABLE
+- LOOP AT
+- SORT
+- DESCRIBE TABLE
+- COLLECT
+- CLEAR
+- REFRESH
+- FREE
 
-✔ Proper Naming Conventions
+---
 
-✔ Well-Structured Programs
+# 📈 Progress
 
-✔ Interview-Oriented Examples
+| Topic | Status |
+|--------|--------|
+| ✅ SAP Basics | Completed |
+| ✅ Internal Tables - Operations | Completed |
+| ⏳ Open SQL | Coming Soon |
+| ⏳ Modularization | Coming Soon |
+| ⏳ Reports | Coming Soon |
+| ⏳ ALV | Coming Soon |
+| ⏳ Data Dictionary | Coming Soon |
+| ⏳ Object-Oriented ABAP | Coming Soon |
+| ⏳ Smart Forms | Coming Soon |
+| ⏳ Adobe Forms | Coming Soon |
+| ⏳ CDS Views | Coming Soon |
+| ⏳ RAP | Coming Soon |
 
-✔ Consistent Daily Practice
+---
+
+# 💡 Why This Repository?
+
+This repository serves as:
+
+- 📖 My ABAP learning journal
+- 💼 Interview preparation material
+- 📝 Code reference
+- 🚀 Portfolio to showcase my ABAP journey
+
+---
+
+# 🛠️ Coding Standards
+
+- Meaningful variable names
+- Proper indentation
+- Readable code
+- Comments wherever required
+- Interview-friendly examples
 
 ---
 
 # 🎯 Goal
 
-> **To become a skilled SAP ABAP Developer by mastering the fundamentals, building real-world solutions, and continuously improving through daily coding practice.**
+To become a skilled **SAP ABAP Developer** by consistently practicing coding, understanding concepts deeply, and building real-world projects.
 
 ---
 
 # ⭐ Support
 
-If you find this repository useful or inspiring,
+If you find this repository helpful, please consider giving it a **Star ⭐**.
 
-**please consider giving it a ⭐ Star.**
-
-Your support motivates me to keep learning and sharing my journey with the community.
+It motivates me to continue learning and sharing my progress.
 
 ---
 
@@ -105,15 +149,10 @@ Your support motivates me to keep learning and sharing my journey with the commu
 
 **Aspiring SAP ABAP Developer**
 
-📚 Passionate about SAP Development • Continuous Learning • Problem Solving
+📚 Learning SAP ABAP one program at a time.
+
+> *"Consistency is the key to mastery. Every program written today builds a stronger developer for tomorrow."*
 
 ---
 
-<div align="center">
-
-### 🚀 *"Consistency is the key to mastery. Every line of code written today shapes the developer I'll become tomorrow."*
-
-**Thank you for visiting! Happy Coding! 💙**
-
-</div>
-````
+## 🚀 Happy Coding!
