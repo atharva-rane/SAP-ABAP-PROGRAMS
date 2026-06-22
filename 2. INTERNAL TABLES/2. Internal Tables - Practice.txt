@@ -67,6 +67,9 @@ CLEAR : gs_emp.
        gs_emp-ctc = '600000'.
        APPEND gs_emp TO gt_emp.
 
+       "Sort Internal Table
+        SORT gt_emp by emp_id DESCENDING."/ASCENDING
+
 *Fields of Internal Table.
 
        write : /5 'Emp Id', 15 'Full Name', 40 'Department', 55 'CTC' LEFT-JUSTIFIED.
@@ -85,11 +88,24 @@ CLEAR : gs_emp.
          "2. Calculate total number of lines in iternal table. [create a variable named gs_lines]
          DESCRIBE TABLE gt_emp LINES gs_lines.
 
+
          "3. Display Internal Table
          write : /5 gs_emp-emp_id, 15 gs_emp-full_name, 40 gs_emp-emp_dept, 55 gs_emp-ctc LEFT-JUSTIFIED.
          ULINE.
 
         ENDLOOP.
 
+
         write : 'Total number of lines in the internal table: ', gs_lines.
         ULINE.
+
+*Read Operation.
+
+        CLEAR: gs_emp.
+        READ TABLE gt_emp INTO gs_emp WITH KEY emp_id = '101'.
+        CONCATENATE gs_emp-fname gs_emp-lname INTO gs_emp-full_name SEPARATED BY space.
+        IF sy-subrc = 0.
+            write: /5 gs_emp-emp_id, 15 gs_emp-full_name, 40 gs_emp-emp_dept, 55 gs_emp-ctc LEFT-JUSTIFIED.
+        ELSE.
+            write: 'Result not found.'.
+        ENDIF.
