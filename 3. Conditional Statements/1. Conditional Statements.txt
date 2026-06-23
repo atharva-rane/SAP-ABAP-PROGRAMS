@@ -1,0 +1,54 @@
+*&---------------------------------------------------------------------*
+*& Report ZABAP_COND_STATEMENTS
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT ZABAP_COND_STATEMENTS.
+
+DATA : bonus TYPE i.
+
+PARAMETERS : sal TYPE i,
+             exp TYPE i,
+             dept TYPE c LENGTH 10 DEFAULT 'HR'. "while using in DATA use - VALUE 'HR'
+
+START-OF-SELECTION.
+
+
+*IF, ELSEIF, ELSE Statements
+      IF sal > 200000 AND sal <= 300000.
+        bonus = sal * '0.3'.
+        write: 'Bonus: ', bonus.
+      ELSEIF sal > 300000 AND sal <= 400000.
+        bonus = sal * '0.4'.
+        write: 'Bonus: ', bonus.
+      ELSEIF sal > 400000 AND sal <= 500000.
+        bonus = sal * '0.45'.
+        write: 'Bonus: ', bonus.
+      ELSEIF sal > 500000 AND sal <= 600000.
+        bonus = sal * '0.5'.
+        write: 'Bonus: ', bonus.
+      ELSEIF sal > 500000 OR sal <= 200000.
+        write: 'No Bonus'.
+      ELSE.
+        write : 'Wrong Input'.
+
+      ENDIF.
+
+*CASE AND ENDCASE Statements
+
+      CASE dept.
+
+        WHEN 'IT'.
+          WRITE : / 'Information Technology'.
+        WHEN 'HR'.
+          WRITE : / 'Human Resources'.
+        WHEN 'FI'.
+          WRITE : / 'Finance'.
+        WHEN OTHERS.
+          WRITE : / 'Unknown Dept.'.
+
+       ENDCASE.
+
+
+
+END-OF-SELECTION.
