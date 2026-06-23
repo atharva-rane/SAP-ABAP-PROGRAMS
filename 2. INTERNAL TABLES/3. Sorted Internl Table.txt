@@ -1,0 +1,100 @@
+*&---------------------------------------------------------------------*
+*& Report ZABAP_SORTED_INTERNAL_TABLE
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT ZABAP_SORTED_INTERNAL_TABLE.
+
+TYPES : BEGIN OF tp_emp,
+         emp_id TYPE zempnew_id,
+         emp_title   TYPE ztitle_new,
+         fname  TYPE  znew_firstname,
+         lname   TYPE	znew_lastname,
+         full_name   TYPE c LENGTH 30,
+         doj         TYPE	z_doj,
+         dept  TYPE  znew_dept,
+         ctc         TYPE	znewctc,
+         bukrs       TYPE bukrs,
+        END OF tp_emp.
+
+DATA : gt_emp TYPE SORTED TABLE OF tp_emp WITH UNIQUE KEY emp_id,
+       gs_emp TYPE tp_emp.
+
+*SORTED TABLE OPERATIONS:
+        CLEAR: gs_emp.
+          gs_emp-emp_id = '101'.
+          gs_emp-emp_title = 'Mr.'.
+          gs_emp-fname = 'Aniruddha'.
+          gs_emp-lname = 'Joshi'.
+          gs_emp-bukrs = '1000'.
+          gs_emp-dept = 'SAP_ABAP'.
+          gs_emp-ctc = '900000'.
+          INSERT gs_emp INTO TABLE gt_emp.
+
+          CLEAR: gs_emp.
+          gs_emp-emp_id = '101'.
+          gs_emp-emp_title = 'Mr.'.
+          gs_emp-fname = 'Aniruddha'.
+          gs_emp-lname = 'Joshi'.
+          gs_emp-bukrs = '1000'.
+          gs_emp-dept = 'SAP_ABAP'.
+          gs_emp-ctc = '900000'.
+          INSERT gs_emp INTO TABLE gt_emp.
+
+          CLEAR: gs_emp.
+          gs_emp-emp_id = '103'.
+          gs_emp-emp_title = 'Mr.'.
+          gs_emp-fname = 'Suchit'.
+          gs_emp-lname = 'Dattopadhyaye'.
+          gs_emp-bukrs = '2000'.
+          gs_emp-dept = 'SAP_BTP'.
+          gs_emp-ctc = '800000'.
+          INSERT gs_emp INTO TABLE gt_emp.
+
+          CLEAR: gs_emp.
+          gs_emp-emp_id = '102'.
+          gs_emp-emp_title = 'Mrs.'.
+          gs_emp-fname = 'Nandai'.
+          gs_emp-lname = 'Joshi'.
+          gs_emp-bukrs = '2000'.
+          gs_emp-dept = 'SAP_DICO'.
+          gs_emp-ctc = '850000'.
+          INSERT gs_emp INTO TABLE gt_emp.
+
+          CLEAR: gs_emp.
+          gs_emp-emp_id = '105'.
+          gs_emp-emp_title = 'Mr.'.
+          gs_emp-fname = 'Atharva'.
+          gs_emp-lname = 'Rane'.
+          gs_emp-bukrs = '2000'.
+          gs_emp-dept = 'SAP_ABAP'.
+          gs_emp-ctc = '600000'.
+          INSERT gs_emp INTO TABLE gt_emp.
+
+          CLEAR: gs_emp.
+          gs_emp-emp_id = '104'.
+          gs_emp-emp_title = 'Mrs.'.
+          gs_emp-fname = 'Ajji'.
+          gs_emp-lname = 'Jagdamba'.
+          gs_emp-bukrs = '3000'.
+          gs_emp-dept = 'SAP_BTP'.
+          gs_emp-ctc = '1200000'.
+          INSERT gs_emp INTO TABLE gt_emp.
+
+          CLEAR: gs_emp.
+          gs_emp-emp_id = '106'.
+          gs_emp-emp_title = 'Mr.'.
+          gs_emp-fname = 'Rohan'.
+          gs_emp-lname = 'Potnis'.
+          gs_emp-bukrs = '2000'.
+          gs_emp-dept = 'SAP-SD'.
+          gs_emp-ctc = '400000'.
+          INSERT gs_emp INTO TABLE gt_emp.
+
+          write :/5 'Emp Id', 15 'Company Code', 30 'First name', 45 'Last Name', 60 'Department', 75 'CTC'.
+
+          LOOP AT gt_emp INTO gs_emp.
+
+              write :/5 gs_emp-emp_id, 15 gs_emp-bukrs, 30 gs_emp-fname, 45 gs_emp-lname, 60 gs_emp-dept, 75 gs_emp-ctc LEFT-JUSTIFIED.
+
+          ENDLOOP.
