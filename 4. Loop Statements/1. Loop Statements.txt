@@ -1,0 +1,55 @@
+*&---------------------------------------------------------------------*
+*& Report ZABAP_LOOPS_STATEMENTS
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT ZABAP_LOOPS_STATEMENTS.
+
+*DO...ENDDO
+
+PARAMETERS : p_date TYPE sy-datum OBLIGATORY DEFAULT sy-datum.
+
+START-OF-SELECTION.
+
+  PERFORM do_enddo.
+
+END-OF-SELECTION.
+*&---------------------------------------------------------------------*
+*& Form do_enddo
+*&---------------------------------------------------------------------*
+*& text
+*&---------------------------------------------------------------------*
+*& -->  p1        text
+*& <--  p2        text
+*&---------------------------------------------------------------------*
+FORM do_enddo .
+
+*DO Statement
+
+*    DO.
+*      WRITE : / 'Date: ',p_date, sy-index.
+*      IF p_date < sy-datum.
+*        EXIT.
+*      ENDIF.
+*      p_date = p_date + 1.
+*    ENDDO.
+
+*    DO 10 TIMES.
+*      IF sy-index = 5.
+*        p_date = p_date + 1.
+*        Continue.
+*      ENDIF.
+*      WRITE : / 'Date: ',p_date, sy-index.
+*      p_date = p_date + 1.
+*    ENDDO.
+
+
+
+*WHILE Statement
+
+      WHILE p_date < sy-datum.
+        WRITE : / 'Date: ',p_date, sy-index.
+        p_date = p_date + 1.
+      ENDWHILE.
+
+ENDFORM.
